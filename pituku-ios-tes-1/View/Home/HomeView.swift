@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var currentBannerPage: Int = 0
+    @State private var showCreateContractView: Bool = false
     var body: some View {
-        
         VStack {
             //MARK: Header
             HStack {
@@ -84,6 +84,10 @@ struct HomeView: View {
                                         Image(service.iconName).resizable().aspectRatio(contentMode: .fit).padding(.all, 15)
                                     }.aspectRatio(1.0, contentMode: .fit)
                                     Text(service.rawValue).font(Font.custom(Roboto.regular.rawValue, size: 10)).foregroundColor(.black).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center)
+                                }.onTapGesture {
+                                    if service == .inquiry {
+                                        self.showCreateContractView.toggle()
+                                    }
                                 }
                             }
                         }
@@ -125,7 +129,9 @@ struct HomeView: View {
             }.background(
                 Rectangle().foregroundStyle(.white).clipShape(RoundedRectangle(cornerRadius: 30)).offset(y: -16)
             )
-        }
+        }.navigationDestination(isPresented: $showCreateContractView, destination: {
+            CreateContractView()
+        })
     }
 }
 

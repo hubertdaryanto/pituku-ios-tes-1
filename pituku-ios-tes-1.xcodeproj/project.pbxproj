@@ -11,6 +11,11 @@
 		CD2A493D2AF8FA1A001CB550 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A493C2AF8FA1A001CB550 /* MainTabBarView.swift */; };
 		CD2A493F2AF8FA1C001CB550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2A493E2AF8FA1C001CB550 /* Assets.xcassets */; };
 		CD2A49422AF8FA1C001CB550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2A49412AF8FA1C001CB550 /* Preview Assets.xcassets */; };
+		CD623F3A2AFB6E6600CC4C39 /* CreateContractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623F392AFB6E6600CC4C39 /* CreateContractView.swift */; };
+		CD623F3C2AFB764200CC4C39 /* CreateContractFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623F3B2AFB764200CC4C39 /* CreateContractFormView.swift */; };
+		CD623F3F2AFB7A2100CC4C39 /* DummyWasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623F3E2AFB7A2100CC4C39 /* DummyWasteType.swift */; };
+		CD623F412AFB7A5900CC4C39 /* DummyWasteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623F402AFB7A5900CC4C39 /* DummyWasteList.swift */; };
+		CD623F442AFB89C800CC4C39 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD623F432AFB89C800CC4C39 /* SearchBar.swift */; };
 		CD707EF32AFB3E120021D0A9 /* PitukuServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD707EF22AFB3E120021D0A9 /* PitukuServices.swift */; };
 		CD707EF72AFB40F70021D0A9 /* Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD707EF62AFB40F70021D0A9 /* Union.swift */; };
 		CDDB33BE2AF9D65000F8F9EC /* ModelHomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB33BD2AF9D65000F8F9EC /* ModelHomeTabBar.swift */; };
@@ -40,6 +45,11 @@
 		CD2A493C2AF8FA1A001CB550 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		CD2A493E2AF8FA1C001CB550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD2A49412AF8FA1C001CB550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD623F392AFB6E6600CC4C39 /* CreateContractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractView.swift; sourceTree = "<group>"; };
+		CD623F3B2AFB764200CC4C39 /* CreateContractFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractFormView.swift; sourceTree = "<group>"; };
+		CD623F3E2AFB7A2100CC4C39 /* DummyWasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyWasteType.swift; sourceTree = "<group>"; };
+		CD623F402AFB7A5900CC4C39 /* DummyWasteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyWasteList.swift; sourceTree = "<group>"; };
+		CD623F432AFB89C800CC4C39 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CD707EF22AFB3E120021D0A9 /* PitukuServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitukuServices.swift; sourceTree = "<group>"; };
 		CD707EF62AFB40F70021D0A9 /* Union.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Union.swift; sourceTree = "<group>"; };
 		CDDB33BD2AF9D65000F8F9EC /* ModelHomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHomeTabBar.swift; sourceTree = "<group>"; };
@@ -115,6 +125,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CD623F382AFB6E5A00CC4C39 /* Create Contract */ = {
+			isa = PBXGroup;
+			children = (
+				CD623F392AFB6E6600CC4C39 /* CreateContractView.swift */,
+				CD623F3B2AFB764200CC4C39 /* CreateContractFormView.swift */,
+			);
+			path = "Create Contract";
+			sourceTree = "<group>";
+		};
+		CD623F3D2AFB7A0700CC4C39 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				CD623F3E2AFB7A2100CC4C39 /* DummyWasteType.swift */,
+				CD623F402AFB7A5900CC4C39 /* DummyWasteList.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		CD623F422AFB89BF00CC4C39 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				CD623F432AFB89C800CC4C39 /* SearchBar.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		CD707EF12AFB3E020021D0A9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +162,7 @@
 		CD707EF42AFB40EE0021D0A9 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				CD623F422AFB89BF00CC4C39 /* TextField */,
 				CD707EF52AFB40F00021D0A9 /* Shape */,
 			);
 			path = Custom;
@@ -157,6 +194,7 @@
 		CDDB33BC2AF9D62E00F8F9EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD623F382AFB6E5A00CC4C39 /* Create Contract */,
 				CD707EF42AFB40EE0021D0A9 /* Custom */,
 				CDDB33BF2AF9DA1200F8F9EC /* Home */,
 				CD2A493C2AF8FA1A001CB550 /* MainTabBarView.swift */,
@@ -206,6 +244,7 @@
 		CDDB33E52AF9FD4A00F8F9EC /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				CD623F3D2AFB7A0700CC4C39 /* Contracts */,
 				CD707EF12AFB3E020021D0A9 /* Features */,
 				CDDB33E62AF9FD4D00F8F9EC /* Fonts */,
 			);
@@ -306,12 +345,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD623F3A2AFB6E6600CC4C39 /* CreateContractView.swift in Sources */,
+				CD623F3C2AFB764200CC4C39 /* CreateContractFormView.swift in Sources */,
 				CD707EF72AFB40F70021D0A9 /* Union.swift in Sources */,
 				CDDB33E92AF9FD5C00F8F9EC /* Roboto.swift in Sources */,
 				CD707EF32AFB3E120021D0A9 /* PitukuServices.swift in Sources */,
+				CD623F442AFB89C800CC4C39 /* SearchBar.swift in Sources */,
 				CDDB33BE2AF9D65000F8F9EC /* ModelHomeTabBar.swift in Sources */,
 				CDDB33C12AF9DA1C00F8F9EC /* HomeView.swift in Sources */,
+				CD623F412AFB7A5900CC4C39 /* DummyWasteList.swift in Sources */,
 				CD2A493D2AF8FA1A001CB550 /* MainTabBarView.swift in Sources */,
+				CD623F3F2AFB7A2100CC4C39 /* DummyWasteType.swift in Sources */,
 				CD2A493B2AF8FA1A001CB550 /* pituku_ios_tes_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
