@@ -11,7 +11,7 @@ import SwiftUI
 struct pituku_ios_tes_1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabBarView()
         }
     }
 }
