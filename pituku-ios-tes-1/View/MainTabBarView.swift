@@ -60,9 +60,7 @@ struct MainTabBarView: View {
                 .padding(6)
             }
             .frame(height: 70)
-            .background(.purple.opacity(0.2))
-            .cornerRadius(35)
-            .padding(.horizontal, 26)
+            .background(.white)
         }
     }
 }
@@ -70,7 +68,6 @@ struct MainTabBarView: View {
 extension MainTabBarView {
     func CustomTabItem(imageName: String, title: String, isActive: Bool) -> some View{
             HStack(spacing: 10){
-                Spacer()
                 Image(imageName)
                     .resizable()
                     .renderingMode(.template)
@@ -81,10 +78,9 @@ extension MainTabBarView {
                         .font(.system(size: 14))
                         .foregroundColor(isActive ? .black : .gray)
                 }
-                Spacer()
             }
-            .frame(width: isActive ? .infinity : 60, height: 60)
-            .background(isActive ? .purple.opacity(0.4) : .clear)
+            .frame(height: 60).frame(maxWidth: .infinity)
+            .background(isActive ? Color(red: 0.89, green: 0.94, blue: 0.96) : .clear)
             .cornerRadius(30)
         }
 }
